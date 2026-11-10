@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(292, 42%, 14%);
+  background-color: hsl(275, 100%, 97%);
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 232px;
+  background-color: hsl(292, 42%, 14%);
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.faq {
+  width: calc(100% - 48px);
+  max-width: 600px;
+  margin: 143px auto 48px;
+  padding: 24px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  box-shadow: 0 30px 50px hsla(292, 42%, 14%, 0.1);
+}
+
+@media (min-width: 768px) {
+  .faq {
+    margin-top: 168px;
+    padding: 40px;
+    border-radius: 16px;
+  }
+}
+.faq h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.faq h1 img {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .faq h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .faq h1 img {
+    width: 48px;
+    height: 48px;
+  }
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.faq-question:hover {
+  color: #ad28eb;
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid #ad28eb;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.faq-question img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.faq-item {
+  padding: 20px 0;
+}
+
+.faq-item + .faq-item {
+  border-top: 1px solid hsl(275, 100%, 92%);
+}
+
+.faq-answer p {
+  margin-top: 16px;
+  line-height: 1.5;
+  color: hsl(292, 16%, 49%);
+}
