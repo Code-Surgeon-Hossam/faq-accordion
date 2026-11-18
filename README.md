@@ -2,12 +2,9 @@
 
 My solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io).
 
-## Live Demo
-
-https://code-surgeon-hossam.github.io/faq-accordion/
-## Write-up
-
-I wrote about what I learned while building this project: [What I learned building an accessible FAQ accordion as a beginner](https://dev.to/dr_hossam_a6694b22e1451cc/what-i-learned-building-an-accessible-faq-accordion-as-a-beginner-44ip)
+- Live site: https://code-surgeon-hossam.github.io/faq-accordion/
+- Code: https://github.com/Code-Surgeon-Hossam/faq-accordion
+- Article: [What I learned building an accessible FAQ accordion as a beginner](https://dev.to/dr_hossam_a6694b22e1451cc/what-i-learned-building-an-accessible-faq-accordion-as-a-beginner-44ip)
 
 ## Features
 
